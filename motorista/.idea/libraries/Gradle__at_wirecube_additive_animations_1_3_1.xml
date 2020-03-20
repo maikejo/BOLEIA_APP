@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: at.wirecube:additive_animations-1.3.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/additive_animations-1.3.1.aar/dcdc73044e6ac8a0599eb1e2d905d7f2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/additive_animations-1.3.1.aar/dcdc73044e6ac8a0599eb1e2d905d7f2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/at.wirecube/additive_animations/1.3.1/7fecfacb18c13d488496e57c9976b0969aff576f/additive_animations-1.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

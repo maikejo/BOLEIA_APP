@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Van Jupiter - Motorista</string>
+    <string name="title_activity_welcome">Map</string>
+    <string name="google_direction_api">AIzaSyBMfkmCaC_s8PHdfI7l4gFTsyqh-0-uqJM</string>
+    <string name="title_activity_driver_traking">Map</string>
+    <string name="title_activity_driver_home">DriverHome</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_viagem">ViagemActivity</string>
+</resources>

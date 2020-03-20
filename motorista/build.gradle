@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key_boleia'
+            keyPassword 'BoleiaApp!@#'
+            storePassword 'BoleiaApp!@#'
+            storeFile file('D:/Projetos/BoleiaApp/boleia_app/keystoreboleia.jks')
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "ao.app.boleia.motorista"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 30
+        versionName "1.1.1"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            resValue "string", "google_maps_key", "AIzaSyBEfVbYPFgN-KkpQ2zs-MidNZIHPR0vZTk"
+            signingConfig signingConfigs.config
+            ext.enableCrashlytics = true
+        }
+        release {
+            lintOptions {
+                disable 'MissingTranslation'
+                checkReleaseBuilds false
+                abortOnError false
+            }
+            resValue "string", "google_maps_key", "AIzaSyBEfVbYPFgN-KkpQ2zs-MidNZIHPR0vZTk"
+            signingConfig signingConfigs.config
+            debuggable true
+
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'io.paperdb:paperdb:2.6'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.github.glomadrian:MaterialAnimatedSwitch:1.1@aar'
+    implementation 'com.firebase:geofire-android:2.1.2'
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.+'
+    implementation 'com.google.firebase:firebase-messaging:17.3.3'
+    implementation 'com.google.firebase:firebase-database:16.0.3'
+    implementation 'com.google.firebase:firebase-auth:16.0.4'
+    implementation 'com.google.firebase:firebase-storage:16.0.3'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.github.Cutta:GifView:1.1'
+    implementation 'com.google.firebase:firebase-perf:16.1.2'
+    implementation 'com.google.android.gms:play-services-analytics:16.0.4'
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'
+
+    implementation 'com.bugfender.sdk:android:1.+'
+
+    //implementation 'com.google.firebase:firebase-crash:16.2.1'
+}
+apply plugin: 'com.google.gms.google-services'

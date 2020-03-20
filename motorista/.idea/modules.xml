@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ao.co.jupiter.motorista.android.iml" filepath="$PROJECT_DIR$/../ao.co.jupiter.motorista.android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/motorista.iml" filepath="$PROJECT_DIR$/motorista.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../passageiro/passageiro.iml" filepath="$PROJECT_DIR$/../passageiro/passageiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../services/services.iml" filepath="$PROJECT_DIR$/../services/services.iml" />
+    </modules>
+  </component>
+</project>

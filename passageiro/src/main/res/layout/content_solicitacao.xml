@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.boleia.passageiro.activity.SolicitacaoViagemMapsActivity"
+    tools:showIn="@layout/app_bar_solicitacao"
+    android:background="#000"
+    android:keepScreenOn="true">
+
+
+    <fragment
+        android:id="@+id/mapSolicitacao"
+        android:name="app.boleia.passageiro.helper.trail.TrailSupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="app.boleia.passageiro.activity.SolicitacaoViagemMapsActivity">
+
+    </fragment>
+
+
+  <!--  <android.support.v7.widget.CardView
+        android:id="@+id/cardViewSolicitacao"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        app:cardElevation="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnPickupRequest2"
+                android:text="SOLICITAR VAN"
+                android:background="@drawable/btn_login_background"
+                android:textColor="@android:color/white"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView> -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_localizacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycler_view_solicitacao"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="200dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_solicitacao"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_avaliacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycler_view_solicitacao"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="79dp" />
+
+
+
+    <!--<android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="110dp">
+
+
+        <app.boleia.passageiro.ml.CameraSourcePreview
+            android:id="@+id/firePreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <app.boleia.passageiro.ml.GraphicOverlay
+                android:id="@+id/fireFaceOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"/>
+        </app.boleia.passageiro.ml.CameraSourcePreview>
+
+        <TextView android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="80dp"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/control"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_toEndOf="@id/firePreview"
+            android:background="#000">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ToggleButton
+                android:id="@+id/facingSwitch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_menu_camera"
+                android:textOff=""
+                android:textOn=""
+                android:checked="false" />
+
+        </FrameLayout>
+
+
+    </android.support.v7.widget.CardView>-->
+</RelativeLayout>
+
+

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Van Jupiter - Passageiro</string>
+    <string name="title_activity_welcome">Map</string>
+    <string name="title_activity_home">Van Jupiter - Passageiro</string>
+    <string name="google_direction_api">AIzaSyBMfkmCaC_s8PHdfI7l4gFTsyqh-0-uqJM</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_solicitacao_viagem_maps">Map</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="ao.app.boleia.motorista.CustommerCallActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/request_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/requestviagem"
+        app:civ_border_color="@android:color/holo_green_dark"
+        />
+
+     <LinearLayout
+         android:layout_below="@+id/request_image"
+         android:orientation="vertical"
+         android:layout_marginTop="16dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/txtTempo"
+             android:textStyle="bold"
+             android:textSize="24sp"
+             android:textColor="@android:color/black"
+             android:textAlignment="center"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:id="@+id/txtDistancia"
+             android:textSize="20sp"
+             android:textColor="@android:color/black"
+             android:textAlignment="center"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+
+         <TextView
+             android:id="@+id/txtEndereco"
+             android:textColor="@android:color/white"
+             android:textAlignment="center"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+     </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAceitar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login_background"
+            android:text="ACEITAR"
+            android:textColor="@android:color/white" />
+
+       <!-- <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="6dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_registrar_background"
+            android:text="CANCELAR"
+            android:textColor="@android:color/black" /> -->
+
+    </LinearLayout>
+</RelativeLayout>
